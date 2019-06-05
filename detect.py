@@ -24,7 +24,7 @@ while(True):
             while(not len(eyes)):
                 t += 1
                 if t > 5:   # driver is sleeping
-                    print "driver is sleeping !\n"
+                    print time.strftime("[%Y-%m-%d %H:%M:%S] ", time.localtime()) + "driver is sleeping !\n"
                     time.sleep(2)
                     break
         for (ex, ey, ew, eh) in eyes:
